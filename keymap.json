@@ -38,5 +38,15 @@
     "bindings": {
       "ctrl-a k": "workspace::ActivatePaneUp"
     }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-r": "project_panel::ToggleFocus",
+      "ctrl-w": "workspace::ActivatePaneRight",
+      "ctrl-d": "project_panel::NewDirectory",
+      "ctrl-n": "project_panel::NewFile",
+      "ctrl-x": "project_panel::Delete"
+    }
   }
 ]
