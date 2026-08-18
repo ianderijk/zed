@@ -1,0 +1,56 @@
+{
+  "if-name": {
+    "prefix": "ifname",
+    "body": "if __name__ == \"__main__\":\n    main()",
+    "description": "adds an if name block"
+  },
+  "timer": {
+    "prefix": "timer",
+    "body": [
+      "def timer(func):",
+      "    def wrapper(*args, **kwargs):",
+      "        import time",
+      "        n = 100",
+      "        start = time.perf_counter()",
+      "        for _ in range(n):",
+      "            result = func(*args, **kwargs)",
+      "        end = time.perf_counter()",
+      "        total_time = end - start",
+      "        avg_time = total_time / n",
+      "        print(f\"{func.__name__:<12} | Avg Time: {avg_time:.5f}s Total for {n} runs: {total_time}\")",
+      "        return result",
+      "    return wrapper"
+    ],
+    "description": "Adds a timing decorator"
+  },
+  "func-main": {
+    "prefix": "fmain",
+    "body": "def main() -> None:\n    pass",
+    "description": "adds a main function"
+  },
+  "log-setup": {
+    "prefix": "log-setup",
+    "body": [
+      "from logger import ProjectLogger",
+      "\n",
+      "logger = ProjectLogger(\"project-name\")",
+      "logger.program_start()"
+    ]
+  },
+  "pdb": {
+    "prefix": "pdb",
+    "body": [
+      "import pdb",
+      "pdb.set_trace()"
+    ],
+    "description": "imports pdb and sets a trace point"
+  },
+  "commentblock": {
+    "prefix": "commentblock",
+    "body": [
+      "######################################################################",
+      "#",
+      "######################################################################"
+    ]
+  }
+}
