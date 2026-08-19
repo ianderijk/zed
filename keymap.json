@@ -46,7 +46,23 @@
       "ctrl-w": "workspace::ActivatePaneRight",
       "ctrl-d": "project_panel::NewDirectory",
       "ctrl-n": "project_panel::NewFile",
-      "ctrl-x": "project_panel::Delete"
+      "ctrl-x": "project_panel::Delete",
+      "ctrl-k j": [
+        "workspace::MoveItemToPaneInDirection",
+        {"direction": "down"}
+      ],
+      "ctrl-k k": [
+        "workspace::MoveItemToPaneInDirection",
+        {"direction": "up"}
+      ],
+      "ctrl-k l": [
+        "workspace::MoveItemToPaneInDirection",
+        {"direction": "right"}
+      ],
+      "ctrl-k h": [
+        "workspace::MoveItemToPaneInDirection",
+        {"direction": "left"}
+      ]
     }
   }
 ]
