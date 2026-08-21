@@ -32,7 +32,7 @@
   "buffer_font_size": null,
 
   "buffer_font_features": {
-    "calt": false, // ligatures
+    "calt": true, // ligatures
   },
   "lsp_document_colors": "border",
   "wrap_guides": [79],
