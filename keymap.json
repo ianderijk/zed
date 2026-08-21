@@ -30,23 +30,9 @@
       "ctrl-t e": "terminal_panel::Toggle",
       "ctrl-a k": "workspace::ActivatePaneUp",
       "ctrl-a j": "workspace::ActivatePaneDown",
-      "ctrl-g": "editor::ScrollCursorCenter"
-    }
-  },
-  {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-a k": "workspace::ActivatePaneUp"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-r": "project_panel::ToggleFocus",
-      "ctrl-w": "workspace::ActivatePaneRight",
-      "ctrl-d": "project_panel::NewDirectory",
-      "ctrl-n": "project_panel::NewFile",
-      "ctrl-x": "project_panel::Delete",
+      "ctrl-a h": "workspace::ActivatePaneLeft",
+      "ctrl-a l": "workspace::ActivatePaneRight",
+      "ctrl-g": "editor::ScrollCursorCenter",
       "ctrl-k j": [
         "workspace::MoveItemToPaneInDirection",
         {"direction": "down"}
@@ -63,6 +49,22 @@
         "workspace::MoveItemToPaneInDirection",
         {"direction": "left"}
       ]
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-a k": "workspace::ActivatePaneUp"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-r": "project_panel::ToggleFocus",
+      "ctrl-w": "workspace::ActivatePaneRight",
+      "ctrl-d": "project_panel::NewDirectory",
+      "ctrl-n": "project_panel::NewFile",
+      "ctrl-x": "project_panel::Delete"
     }
   }
 ]
