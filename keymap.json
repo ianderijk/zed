@@ -48,13 +48,20 @@
       "ctrl-k h": [
         "workspace::MoveItemToPaneInDirection",
         {"direction": "left"}
-      ]
+      ],
+      "ctrl-i": "editor::Hover",
+      "ctrl-n": "editor::GoToNextSymbol",
+      "ctrl-m": "editor::GoToPreviousSymbol",
     }
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-a k": "workspace::ActivatePaneUp"
+      "ctrl-a k": "workspace::ActivatePaneUp",
+      "ctrl-k k": "terminal::ScrollHalfPageUp",
+      "ctrl-j j": "terminal::ScrollHalfPageDown",
+      "ctrl-k": "terminal::ScrollHalfPageUp",
+      "ctrl-j": "terminal::ScrollHalfPageDown",
     }
   },
   {
